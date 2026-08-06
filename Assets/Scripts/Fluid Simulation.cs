@@ -13,6 +13,6 @@ public class FluidSimulation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DrawCircle(Vector2.zero, 1, Color.cyan);
+        
     }
 }
