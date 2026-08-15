@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 780466602433382496}
   m_Layer: 6
   m_Name: Liquid Particle
-  m_TagString: Untagged
+  m_TagString: Fluid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -2059048225914490237, guid: 34e8f6424ba9ca249ad557935c7945ed, type: 3}
   m_Color: {r: 0.26610893, g: 0.67651844, b: 0.8679245, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,4 +155,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.1
+  m_Radius: 0.2
