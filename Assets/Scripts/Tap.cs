@@ -4,6 +4,7 @@ public class Tap : MonoBehaviour
 {
 
     public GameObject waterDrop;
+    private int Count;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,12 +21,25 @@ public class Tap : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.T))
         {
             FlowStop();
+
         }
+        Debug.Log("Count is" + Count);
     }
 
     void FlowStart()
     {
-        Instantiate(waterDrop, transform.position, transform.rotation);
+        if (Count == 10)
+        {
+            Instantiate(waterDrop, transform.position, transform.rotation);
+            Count = Count - 10;
+            Debug.Log("Count is" + Count);
+        }
+        if (Count < 10)
+        {
+            Count++;
+            Debug.Log("Count is" + Count);
+        }
+
     }
 
     void FlowStop()
